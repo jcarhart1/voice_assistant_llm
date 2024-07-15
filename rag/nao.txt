@@ -1,0 +1,456 @@
+
+
+
+
+NarxCare Application Overview
+
+
+December 2023
+Version 1.1
+
+
+
+
+
+
+	
+	
+Table of Contents
+NarxCare Application	4
+Introduction to NarxCare	4
+Why NarxCare?	4
+How Does NarxCare Work?	4
+Who Has Access to NarxCare?	4
+How is NarxCare Used in Therapy Management?	5
+NarxCare Layout	5
+NarxCare Overview	7
+Header and Patient Identifying Information	7
+Prescription Detail	7
+Provider and Pharmacy Detail	8
+Rx Graph	9
+Other graphs	10
+Download Options	11
+Other Tools/Metrics	11
+Resources	11
+MOUD Providers	12
+PDMP & CDC Resources	12
+Indicators and Scores	13
+Additional Indicators	13
+Additional State Indicators	14
+Narx Scores	15
+How are Narx Scores Used?	16
+Narx Score Calculations and Metrics	16
+Narx Score Algorithm	17
+Score Computation	20
+Overdose Risk Score	24
+ORS Intended Use	24
+ORS Algorithm Development	24
+Additional External Validation	25
+ORS Data Inputs	26
+Key Contributing Factors to ORS	27
+Additional Information on the Overdose Risk Score Model	28
+Document Information	30
+Disclaimer	30
+Change Log	30
+
+
+
+
+NarxCare Application
+Introduction to NarxCare 
+NarxCare is an application that provides a set of tools to support clinicians’ analysis of controlled substance data from government managed and regulated Prescription Drug Monitoring Programs (PDMPs)1. 
+Informed prescribing practices must be part of a multi-dimensional response to the ongoing opioid epidemic. The NarxCare application automatically analyzes PDMP data and delivers scores and visualizations of usage patterns based on the data, to further enable informed prescribing and dispensing practices. The NarxCare application is user-friendly, easily integrated into a patient’s electronic medical record, and interoperable with other PDMPs. This document provides an overview of the NarxCare application and a breakdown of the report and analytics tools.
+Why NarxCare?
+NarxCare offers a representation of PDMP data in an interactive format to help clinicians2, and care teams quickly and easily access and interpret data to aid in their controlled substance3 therapy management. 
+With the NarxCare application, healthcare providers have access to all the features and functions of NarxCare enabled by their PDMP Administrator with a consistent look and feel for all users who access the solution. Furthermore, NarxCare delivery is enabled within Electronic Health Records (EHR) and Pharmacy Management Systems for those prescribers and dispensers who choose to access NarxCare through integration within their healthcare IT system. 
+How Does NarxCare Work?
+NarxCare aggregates historical and active PDMP data and presents color-coded, interactive, visual representations of the PDMP data. In addition, NarxCare has Other Tools/Metrics that contain a Resources dropdown menu where you can find Medications for Opioid Use Disorder (MOUDs) providers and CDC educational resources. These resources can be used by clinicians as an aid to help patients.  
+Who Has Access to NarxCare?
+NarxCare is available to all authorized end users, whether they are accessing NarxCare via the web portal, an integrated EHR system, or pharmacy software. 
+How is NarxCare Used in Therapy Management?
+The information provided in NarxCare is intended to support clinicians’ controlled substance therapy management activities. For example, with respect to information provided in NarxCare that indicates increased overdose risk potential, the information may be helpful in prompting consideration of strategies to mitigate risk of an overdose, if warranted, based on the specific patient context and the clinician’s professional judgement. However, none of the information presented should be used as sole justification for providing or refusing to provide medications.
+NarxCare Layout
+The NarxCare application displays PDMP data in the form of tiles. The following layout provides common tiles you may see in your interface. 
+HeaderScores & IndicatorsRX Graph      RX Summary     RX Summary Expanded     Prescriptions     Providers      Pharmacies      Note: The tiles displayed to you may vary from the above layout depending on the configurations established by your PDMP administrator. For example, the PDMP administrator may request additional tiles for display in the interface for their PDMP that are not displayed in the above layout. 
+An overview of each tile can be found in the NarxCare Overview section of this document. 
+CAUTION/IMPORTANT REMINDER: NarxCare is intended to aid, not replace, medical decision-making. None of the information presented should be used as sole justification for providing or refusing to provide medications. 
+
+
+NarxCare Overview
+NarxCare was designed to provide an intuitive view of dispensing information for a patient. This information is presented as tiles, many of which are interactive, allowing the user to click or hover over links and graphs within a tile to access additional information.
+Note: The list of tiles described below is not comprehensive. This is a list of the most commonly activated tiles by PDMP administrators. You may not see all of the tiles described below and you may see additional tiles in your layout that are not described below. The tiles displayed to you are configured by your PDMP administrator.
+Header and Patient Identifying Information
+The NarxCare header contains patient identifying information in the first line above the tiles. Additional patient information, such as date of birth and address, can be found directly below the header. This information will remain visible at the top of your screen as you scroll through the various tiles.
+
+You can click View Linked Records to display all records linked to the selected patient. 
+
+Prescription Detail
+Each prescription dispensed to a patient is presented in the Prescriptions tile. If desired, you can use the arrows next to each column header () to sort the table by that column. You can also hover your cursor over a prescriber or pharmacy to view additional information, such as the prescriber or pharmacy’s full name, address, and DEA number. 
+
+Provider and Pharmacy Detail
+Provider and pharmacy information, including full name, address, and DEA number (if applicable), is presented in the Providers and Pharmacies tiles.  
+
+
+
+
+
+
+Rx Graph 
+The Rx Graph tile displays prescribing information and allows you to see important patterns and levels of use. The Rx Graph displays information in reverse chronological order; meaning the most recent prescriptions are displayed on the left side of the graph and the oldest are displayed on the right. 
+  
+Prescriptions are color coded and can be selected or deselected at the top of the graph.
+Color coding is as follows:
+* Narcotics (opioids) = red
+* Buprenorphines = purple
+* Sedatives (benzodiazepines, sleep aids, etc.) = blue
+* Stimulants = green
+* Other = grey*
+*Note: Other prescriptions can include anesthetics, cannabinoids, GI narcotics, steroids, and medications used to treat neuropain (e.g., gabapentin). 
+Each pixel in the graph represents one day. Therefore, a 30-day prescription is represented by a rectangle about 1 cm wide and a 1–3-day prescription appears as a narrow vertical bar.
+
+The Rx Graph is interactive. You can click on a prescription to view information for that prescription, or you can click and drag over multiple prescriptions to view information for the selected prescriptions. 
+
+Other graphs
+If configured by your PDMP administrator, the Rx Summary and Rx Summary Expanded tiles may also be included in your NarxCare interface. The Rx Summary tile includes: 
+* Morphine Milligram Equivalent Prescribed Over Time
+
+* Buprenorphine (mg) Prescribed Over Time
+
+* Lorazepam MgEq (LME) Prescribed Over Time 
+
+These tiles contain graphs that provide a longitudinal view of daily MME, buprenorphine, and LME. 
+Note: Abrupt changes in trends may be due to overlapping prescriptions. Clinicians can review detailed information on the prescriptions in the Prescriptions, Providers, and Pharmacies tiles. 
+You can customize the length of time for which you wish to view information by clicking Last 30 Days (displayed by default), Last 60 Days, Last 90 Days, Last 1 Year, or Last 2 Years at the top of each graph.
+
+Note: You can hover over the timeline in any of these graphs to display information for a specific day.
+
+Download Options
+If you need to download a PDF or CSV version of the report, click the Export dropdown menu, then click Download PDF or Download CSV. 
+
+Other Tools/Metrics 
+To view Other Tools/Metrics available to you, click on the dropdown menu located on the top right-hand side of the page to display your additional options.  
+
+Resources 
+The Resources dropdown menu contains easy access links to MOUD Providers and PDMP & CDC Resources that may be useful to coordinate care or review CDC guidelines. 
+
+MOUD Providers
+The MOUD Providers pop-up window allows users to locate the 30 closest providers who are listed in the Substance Abuse and Mental Health Services Administration (SAMHSA) buprenorphine treatment locator database.  
+
+The patient’s zip code is pre-populated but can be edited. After entering the desired Zip Code, click Submit to generate a PDF that can be viewed and printed.
+Note: These resources are provided by the Substance Abuse and Mental Health Services Administration (SAMHSA). View more information about the treatment locator here.
+
+PDMP & CDC Resources
+The State & CDC Resources pop-up window provides a series of PDMP & CDC documents pertaining to both providers and patients. 
+Note: Your PDMP may not have additional resources available under the Resources link as this is a supplemental feature. Please contact your PDMP administrator if you would like additional information on CDC resources. 
+
+To assist providers in educating their patients, printable pamphlets are also available from the CDC. In addition to CDC-provided resources, and in coordination with the Bureau of Substance Addiction Services (BSAS), specific resources, as selected by the applicable PDMP administrator, are also available. More information about CDC resources can be found here.
+Indicators and Scores 
+The NarxCare application includes a series of indicators and scores that may be automatically returned to the requesting system as discrete data. The indicators displayed will either be Additional Indicators or Additional State Indicators. Additional Indicators are the default indicators returned. These are replaced by Additional State Indicators if Additional State Indicators are configured by the applicable PDMP administrator.  The scores returned are Narx Scores and Overdose Risk Scores (ORS). Requesting systems receiving such data can choose to display it within the native electronic health record (EHR) or pharmacy management system. However, many systems choose to display the data within the NarxCare application as tiles. 
+For additional information on Narx Scores and ORS, please refer to the Narx Scores and ORS respective sections in this document. 
+
+Additional Indicators
+Additional Indicators will display automatically. This type of indicator is not configured by PDMP administrators. The Additional Indicators tile includes a set of three binary indicators formed from data aggregated from the PDMP. 
+
+There are currently three standard Additional Indicators:
+* More than 5 controlled substance providers in any 365-day period
+* More than 4 pharmacies that dispense controlled substances in any 90-day period
+* More than 40 MME average over the previous 2 years and having total prescription(s) for more than 100 MME at any time during the previous 2 years
+
+
+These indicators are based on the following literature:
+* Provider Indicator: Hall AJ, Logan JE, Toblin RL, et al. Patterns of Abuse Among Unintentional Pharmaceutical Overdose Fatalities. JAMA. 2008;300(22): 2613–2620. doi:10.1001/jama.2008.802.
+* Pharmacy Indicator: Yang Z, Wilsey B, Bohm M, et al. Defining Risk of Prescription Opioid Overdose: Pharmacy Shopping and Overlapping Prescriptions Among Long-Term Opioid Users in Medicaid. The Journal of Pain. 16(5): 445–453.
+* 40 MME Indicator: Paulozzi L, Kilbourne E, Shah N, et. al. A History of Being Prescribed Controlled Substances and Risk of Drug Overdose Death. Pain Medicine. 2012;13(1): 87–95. doi: 10.1111/j.1526-4637.2011.01260.x.
+
+CAUTION / IMPORTANT REMINDER: Clinicians use standard PDMP-based Additional Indicators to further review details in the patient’s prescription history while attending to their patients. Additional Indicators are intended to aid, not replace, medical decision-making. None of the information presented should be used as sole justification for providing or refusing to provide medications.
+Additional State Indicators
+The Additional State Indicators feature delivers configurable indicators to clinicians to identify when patients meet or exceed PDMP-specified thresholds. These indicators are configured by PDMP administrators.
+The list below outlines the most common configurable indicators PDMP administrators typically choose to enable for display in the NarxCare application under the Additional State Indicators section.  
+Additional State IndicatorDescriptionPrescriber & Dispenser ThresholdsDisplays when the number of prescribers and dispensers specified by your PDMP Administrator is met or exceeded within a set time period.Daily Active MME ThresholdDisplays when the daily active morphine milligram equivalent (MME) is greater than or equal to the value specified by your PDMP Administrator.Opioid & Benzodiazepine ThresholdDisplays when opioids and benzodiazepines are prescribed within the time period set by your PDMP Administrator.Daily Active Methadone ThresholdDisplays when the daily active MME for methadone is greater than or equal to the value specified by your PDMP Administrator.Opioid Consecutive Days ThresholdDisplays when opioids have been received daily for longer than the time period set by your PDMP Administrator.
+
+
+Note: 
+* The Additional State Indicators available to you, and the thresholds associated with them, are configured by your PDMP administrator. PDMPs can submit a request for additional indicator types (e.g., death data) that are felt to espouse high correlations with adverse patient outcomes and are relevant to their jurisdiction’s population. These additional indicators do not impact Narx Scores or ORS.
+* If any of the configurable Additional State Indicators are not activated by your PDMP administrator, the standard PDMP-based Additional Indicators tile will display. For additional information on the standard Additional Indicators tile, please refer to the Additional Indicators section of this document.
+You can view a detailed description of the Additional State Indicators displayed by clicking the Details link located at the bottom right-hand corner of the Additional State Indicators tile. Once you click this link, the Additional Indicators details modal is displayed as shown below.
+
+Note: If configured by your PDMP administrator, this modal may also display an Explanation section containing additional information, provided by the PDMP administrator, about why you are seeing this indicator.
+
+CAUTION / IMPORTANT REMINDER: Clinicians use Additional State Indicators to further review details in the patient’s prescription history while attending to their patients. Additional State Indicators are intended to aid, not replace, medical decision-making. None of the information presented should be used as sole justification for providing or refusing to provide medications.
+
+Narx Scores
+The NarxCare application provides three substance-specific (i.e., Narcotics, Sedatives, Stimulants) exposure scores for prescribing and dispensing of controlled substances as it relates to a patient called Narx Scores. 
+
+How are Narx Scores Used?
+
+Narx Scores are intended to be automatically delivered into the clinical workflow as discrete data and be easily viewable within a patient’s record. Many systems choose to place Narx Scores in the patient header or alongside the patient’s vital signs. 
+Narx Scores were designed to increase provider awareness of a patient’s controlled substance exposure. Thus, in order for the provider to derive the greatest informational utility from the scores, we encourage their viewing early during the patient encounter.
+Note: Workflows may vary by organization. Please contact your organization administrator for additional information. 
+
+Narx Score Calculations and Metrics
+Each Narx Score has a numerical value based on a synthesis of key patient metrics derived from the PDMP. 
+Narx Scores are calculated for narcotics, sedatives, and stimulants and have the following characteristics:
+1. Each score consists of three digits ranging from 000–999.
+2. The first two digits represent a relative scoring system for a given patient’s exposure to a controlled substance compared to the rest of the PDMP population (described in detail below).
+3. The last digit of each score represents the number of active prescriptions of that type. For example, a Narcotic Narx Score of 504 indicates the patient has four active narcotic prescriptions according to information obtained from the PDMP on dispensations.
+4. The scores correspond to the prevalence and timing of literature-based risk factors4 that exist within the PDMP data for that specific patient. 
+* There are four metrics used in Narx Score calculations. They are as follows: 
+1. The number of controlled substance prescribers.
+2. The number of pharmacies where controlled substance prescriptions were filled.
+3a. The total dosage of prescriptions (opioids and sedatives only). 
+3b. The number of days supply for prescriptions (stimulants only).
+4. The number of overlapping days for each drug type.
+* Each metric is tallied across 4 timeframes of reference: 
+1. Most recent 2 months
+2. Most recent 6 months
+3. Most recent 1 year
+4. Most recent 2 years
+5. The time elapsed for any literature-based risk factor serves to decrease its contribution to the score. For example, 1,000 MME dispensed within the last month will elevate the score more than 1,000 MME dispensed one year ago.
+6. The distribution of Narx Scores for patients found in a PDMP is approximated as follows5:
+a. 78% score between 0 and 200
+b. 6.7% score between 200 and 299
+c. 5.3% score between 300 and 399
+d. 6.5% score between 400 and 499
+e. 3.4% score between 500 and 599
+f. ~1% score between 600 and 999
+
+The Narx Scores were designed such that:
+1. Patients who are exposed to small amounts of medication with limited provider and pharmacy usage will have lower scores (e.g., scores below 199).
+2. Patients who are exposed to large amounts of medications in accordance with recommended guidelines6 (single provider, single pharmacy, etc.) will have mid-range scores (e.g., scores between 200 and 500).
+3. Patients who are exposed to large amounts of medications while using many providers and pharmacies, and with frequently overlapping prescriptions, will have higher scores (e.g., scores above 500).
+
+Narx Score Algorithm
+
+Relative Scoring
+Narx Scores represent a relative scoring system for a given patient’s exposure to a controlled substance compared to the rest of the PDMP population. The literature-based risk factors listed above in the introduction of this section are quantified and then converted to a reference value, which ranges from 0–99. These reference values correlate with a percentile measurement of that exposure within the specified PDMP population. 
+A single point of measurement for total MME in the last 60 days can be used to illustrate this concept further using the following three patients: 
+* Patient A:160 MME* Patient B:4,800 MME* Patient C:1,050 MME
+
+If we were to place these three patients on a line representing relative exposure risk (e.g., based upon the presence of increasing opioid dose), we could imagine a linear relationship based on MME, which could be depicted as follows: 
+
+This depiction has no boundaries to the left or right so these patients could also be drawn as follows:
+ 
+The Narx Score algorithm establishes boundaries of exposure by converting all measured variables, such as 60-day MME, to a scaled value between 0 and 99. This was done by evaluating each variable across each PDMP population and measuring the 60-day MME value for every patient with available data in the PDMP.  
+This set of data was then used to create a reference table roughly equating to a percentile in the population. If we add the scaled value to each example patient’s 60-day MME, the result is: 
+Raw ValueScaled ValuePatient A:160 MME20Patient B:4,800 MME90Patient C:1,050 MME65If we apply these new scaled values to our percentile-ranked risk diagram and create a left and right boundary of 0 and 99, the result is: 
+
+The percentile-ranked scaled values indicate that Patient B and C are closer to each other than might otherwise be suspected. In this case, we can also say that Patient B has used more MME in the last 60 days than 90% of the rest of the PDMP population in the PDMP where the patient resides. 
+
+Time Periods
+The NarxCare algorithm evaluates a PDMP data record using four different, overlapping time periods. In each time period, the factor being evaluated is tabulated and then converted to a percentile-ranked scaled value. These reference tables exist for all the factors being evaluated and cover all four time periods. In general, as the raw value count (i.e., number of prescribers) increases, so does the reference value (up to 99 maximum). As the time period increases, the scaled value decreases, so older records contribute less to the score than more recent records with the same drug content. 
+Example provider reference tables are provided on the next page. 
+
+
+
+
+
+
+
+Weighting
+A Narx Score is calculated as a weighted average of the scaled values. A 50% weighting is applied to the milligram equivalencies with the remaining factors making up the other 50%.7
+
+This type of weighting results in several relationships. If we think of milligram equivalency as consumption and the combination of providers, pharmacies, and overlaps collectively as behaviors, we can create the following score categories.
+
+ConsumptionBehaviorsNarx ScorePatient ALowLowLowPatient BLowHighMidPatient CHighLowMidPatient DHighHighHigh
+It is important to understand that there are several different patterns of use that can result in the same score. It is always necessary to look at the actual PDMP data to determine what use patterns exist that have resulted in the Narx Score presented.
+CAUTION / IMPORTANT REMINDER: Clinicians use Narx Scores as indicators to further review details in the patient’s prescription history while attending to their patients. Narx Scores are intended to aid, not replace, medical decision-making. None of the information presented should be used as sole justification for providing or refusing to provide medications.
+Score Computation
+The following steps are involved in calculating a Narx Score:
+1. Determine the raw values for all time periods for all variables.
+2. Convert all raw values to scaled values.
+3. Average the scaled values for each factor for all time periods.
+4. Determine the weighted average.
+Note: Dividing by the sum of the weights is necessary to normalize the weighted average. The weights used to calculate the average reflect the importance or significance of each feature, but they may not necessarily add up to 1.0 or 100%. By dividing the sum of the weighted features by the sum of the weights, we are essentially calculating the weighted average as a percentage of the total weight. This normalization ensures that the resulting average is on a scale of 0 to 1, or 0% to 100%, which makes it easier to compare the average across different datasets or to interpret it in a meaningful way. Without normalization, the weighted average could be misleading, especially if the weights are not proportional to each other or if the sum of weights is significantly different from the expected value of 1.0 or 100%. 
+5. Sum the number of active prescriptions and then concatenate to the two-digit percentile score.
+Using a sample patient for a hypothetical scaled value to illustrate the calculation of a Narcotic Score:
+1. Determine the raw values for all time periods for all variables.
+
+60 days6 mos.1 year2 yearsPrescribers691515Pharmacies4466MME1640540873587364LME0000Overlaps175565652. Convert all raw values to scaled values.
+
+60 days6 mos.1 year2 yearsPrescribers85768464Pharmacies78566249MME74878887LME0000Overlaps417064523. Average the scaled value for each factor for all time periods.
+
+60 days6 mos.1 year2 yearsAvgPrescribers8576846477Pharmacies7856624961MME7487888784LME00000Overlaps41706452574. Calculate the weighted average.
+
+60 days6 mos.1 year2 yearsAvgWt.Prescribers8576846477177Pharmacies7856624961161MME74878887843252LME0000010Overlaps41706452562114Weighted Average (sum/8)63
+
+
+5. Sum the number of active prescriptions and then concatenate to the two-digit percentile score.
+
+60 days6 mos.1 year2 yearsAvgWt.Prescribers8576846477177Pharmacies7856624961161MME74878887843252LME0000010Overlaps41706452562114Weighted Average (sum/8)63Number of Active Narcotic Prescriptions2Narcotic Score632
+General Considerations for Narx Scores
+Just as there is no single blood pressure that can be considered normal for all people, there is no single Narx Score that is considered normal. A Narx Score must be applied to the clinical scenario by the clinician. For example, a blood pressure of 120/80 can simultaneously be: 
+* Inappropriate for a 2-month-old infant
+* Appropriate for a 20-year-old woman
+* Inappropriate for an elderly patient with an average daily blood pressure of 200/100
+
+Example Use Cases8
+How Narx Scores, used in concert with additional information, can help to support discussions with patients: 
+* Case A – An 18-year-old male basketball player with other significant history presents with a severe ankle sprain. His Narx Scores are:
+NarcoticSedativeStimulant000000000Important consideration: If considered for a controlled substance due to the severity of injury, this may be the patient’s first exposure to the effects of a controlled substance. The clinician would typically conduct a thorough review of the risks and benefits with the patient.
+* Case B – an 81-year-old female presents with decreased level of consciousness following a fall where she suffered a closed head injury. Her Narx Scores are:
+NarcoticSedativeStimulant341501000Important Consideration: Many elderly patients are on chronic opioids and benzodiazepines. The physician may want to consider whether this patient’s use of opioids and benzodiazepines contributed to her fall. Alternatively, the physician may want to consider whether the patient may be taking too much medication and has potentially developed anxiety seizures due to benzodiazepine withdrawal, complicating the patient’s medical picture.
+* Case C – A 36-year-old male patient with mild chronic back pain frequently treated with controlled substances presents for a medication refill. Upon review of the patient’s PDMP record, the patient has been to 17 different prescribers in the last year. His Narx Scores are:
+
+NarcoticSedativeStimulant671240000Important Consideration: Many patients obtain medications through multiple different providers. This can be due to the patient being seen in a clinic that is staffed by different providers, or it can be due to access to care issues requiring visits to urgent care centers or emergency departments.
+
+* Case D – A 46-year-old female patient with chronic anxiety, frequently treated with benzodiazepines, presents for a medication refill. On review of the PDMP record, the attending physician notes that her Narcotic score is non-zero, yet her PDMP history does not show that narcotics were ever dispensed. Her Narx Scores are:
+
+NarcoticSedativeStimulant3030000Important Consideration: 
+* If a provider were to focus on the Narcotic score in isolation, this could lead to an incomplete view of a patient’s current medication regimen. Therefore, with this type of patient in mind, Narx Scores incorporate an ‘awareness value’ for attending providers. For example, the literature is clear on the association between adverse events such as respiratory depression, sedation and drowsiness, central nervous system depression, as well as an increased risk of falls and injuries due to the concomitant use of narcotics and sedatives (which includes benzodiazepines). 
+* Thus, patients who only use narcotics (i.e., opioids) will receive a Sedative score to increase provider awareness that prescribing the latter drug type might elevate the likelihood of an adverse event. Similarly, patients who only use sedatives receive a Narcotic score to increase provider awareness that prescribing controlled substances might elevate the likelihood of an adverse event. 
+* Appropriate prescribing practices encourage this more holistic view.
+CAUTION / IMPORTANT REMINDER: Clinicians use Narx Scores as indicators to further review details in the patient’s prescription history while attending to their patients. Narx Scores are intended to aid, not replace, medical decision-making. None of the information presented should be used as sole justification for providing or refusing to provide medications.
+
+Overdose Risk Score 
+The NarxCare application also provides a composite index of discrete data obtained from the PDMP called an Overdose Risk Score (ORS).  The ORS is comprised of three digits ranging from 000–999. 9
+ORS Intended Use 
+ORS was developed with a logistic regression model using PDMP data as an input and is intended to provide an indicator, along with other patient-centric factors outlined below, for clinicians of the likelihood of an unintentional overdose death.  
+Note: ORS is meant to help aid in independent clinical decision-making by healthcare providers and is not intended for use by law enforcement agencies or activities, or any other uses. 
+ORS Algorithm Development 
+The ORS algorithm was derived using a common machine learning model (i.e., logistic regression) with a case-control study design. The model was originally trained using data obtained from over 5,000 autopsy adjudicated unintentional overdose deaths, which were age- and gender-matched to 500,000 patients using prescribed controlled substances during the same time frame who did not experience an overdose death.  
+The training dataset was acquired from a state in the Midwest and spanned the years from 2013 to 2016. It included cases from both males (68%) and females (32%), with ages from 18 to 85, from both urban (94.38%) and rural (5.2%) demographics.  
+The training dataset produced the following validation statistics, odds ratios and score distribution.   
+Validation Statistics
+* Precision (i.e., positive predictive value/true positive rate): 77%
+* Recall (i.e., sensitivity): 71%
+* Specificity (i.e., true negative rate): 79%
+* Negative predictive value: 73%. 
+Odds Ratios
+ORS Number of Decedents Number of  
+Non-Decedents Odds Ratio of Unintentional Overdose Death Odds Ratio 95% Confidence Interval 000-199 100170,5011ref200–299 337110,9685.24.2-6.5300–399 1,646195,92014.311.6-17.6400–499 1,34034,92464.353.6-80.7500–599 1,0579,865182.4149.3-226.4600-6995432,492370.9299.9-466.9700-799182492629.5486.7-831.4800-9994285841.3549.9-1,258.4
+Score Distribution 
+* 000-199: 32.2% 
+* 200-299: 21% 
+* 300-399: 37.2% 
+* 400-499: 6.8% 
+* 500-599: 2.1% 
+* 600-999: 0.7%
+Additional External Validation 
+Additional validation of the model has been completed using decedent data from a different state than the training data state. The additional validation dataset spanned the years from 2017 to 2023 and contained ~ 400 decedents and ~ 32,000 non-decedents10 whose patient attributes were similar to those in the original training dataset. The validation data is a meaningfully smaller dataset, which can have a significant impact on the results in ORS bands with a small number of decedents. Thus, the smaller sample size resulted in a very small number of patients with a score >= 500.  
+The additional validation dataset produced the following validation statistics, odds ratios and score distribution. 
+Validation Statistics 
+* Precision (i.e., positive predictive value/true positive rate): 73%
+* Recall (i.e., sensitivity): 75%
+* Specificity (i.e., true negative rate): 73%
+* Negative predictive value: 74%. 
+Note: We plan to update these metrics with additional data from other states with larger sample sizes. 
+Odds Ratios
+Note: Numbers in each score category in the table below have been rounded to preserve the anonymity of the validation dataset and maintain the original odds ratios. 
+ORS Number of Decedents Number of  
+Non-Decedents Odds Ratio of Unintentional Overdose Death Odds Ratio 95% Confidence Interval 000-199 205,5001ref200–299 805,7003.82.4-6.5300–399 18013,1003.82.4-6.2400–499 905,2004.72.9-7.9500–999 301,7004.82.8-8.7Score Distribution
+* 000-199: 17.5%
+* 200-299: 18.3%
+* 300-399: 42%
+* 400-499: 16.7%
+* 500-999: 5.5%
+ORS Data Inputs
+Data quality of ORS data inputs is maintained by having the PDMP data renormalized with the most up-to-date source data. ORS inputs the most current information available from the PDMP. Data quality is maintained by re-running a number of fields against the source files. To create labels for the training and validation data, decedent records were matched to PDMP data using a proprietary patient name matching system that connects dispensation records to each deceased patient.
+The accuracy of any predictive model is impacted by the data input. In the case of ORS, the data is pulled from government managed and regulated PDMPs. Therefore, the data input for ORS is the same data that a user can access by reviewing the details in the PDMP report. The data used in ORS is matched to the patient using the same processes employed throughout NarxCare. 
+The data inputs into the ORS algorithm are listed below and are all obtained from PDMP data. All data inputs are required for analysis, and are listed in order of their weighted relevance, with the top two having the highest relevance at approximately 49% total and the last three weighted less than 1% each.
+1. History of Medication for Opioid Use Disorder (MOUDs) use (excluding Buprenorphine formulations for pain management11)12
+2. Number of high-risk dispensations in the most recent year13
+a. Any OxyContin prescription
+b. Fentanyl patches
+c. Methadone (if reported to PDMP)
+d. Buprenorphine (including dispensations for pain management14)
+e. Morphine (i.e., extended-release formulations)
+f. Any opioid prescription with a daily MME > 120
+3. Male gender, as reported by pharmacies15
+4. Number of pharmacies where opioids/sedatives were filled in the most recent year16
+5. Age, weighted based on age range17,18
+6. Number of overlapping opioid/sedative dispensations in the most recent year19 
+7. Greater than 6 opioid dispensations in the most recent year20
+8. Number of overlapping opioid/benzodiazepine prescriptions in the most recent year21 
+9. Total day’s supply of short-acting opioid prescriptions in the most recent year 22
+10. Pattern of chronic opioid use23
+Notes: 
+* If one or more of these elements are not available for a patient, the ORS score is not calculated. Instead, a “000” score will be presented to the healthcare provider. This is not an indicator of the absence of unintentional overdose death risk, but rather the absence of data necessary to deliver a score. 
+* Stimulants are not included within the inputs. 
+As noted above, the ORS takes multiple PDMP factors into consideration for risk of unintentional overdose death and is more predictive than any one factor.
+Key Contributing Factors to ORS 
+On the standard user interface, the key contributing factors displayed in the ORS tile are:
+* Greater than six dispensations (please refer to # 7 in the Data Inputs section of this document for additional information). 
+o Displays a “yes” or “no” answer (e.g., “yes” if more than six opioid dispensations in the most recent year)
+* Benzo – Narcotics overlap (please refer to #8 in the Data Inputs section of this document for additional information).
+o Display as “X” days of overlapping prescriptions in the most recent year.
+* Number of high-risk dispensations (please refer to #2 in the Data Inputs section of this document for additional information).
+o Displays a count of high-risk dispensations in the most recent year.
+* Number of pharmacies where narcotics/sedatives filled (please refer to #4 in the Data Inputs section of this document for additional information).
+o Displays a count of pharmacies in the most recent year.
+* Total days supply of short-acting drugs (please refer to #9 in the Data Inputs section of this document for additional information).
+o Displays a count of days supply in the most recent year.
+* Combination of Narcotic and Sedative RX (please refer to #6 in the Data Inputs section of this document for additional information).
+o Displays a count of combination of RXs in the most recent year.
+Note: History of MOUD use and gender are not among the inputs identified in the key contributing factor display. However, these remain important weighted inputs for the score, as described above. 
+
+Note: The arc displayed above the ORS is a visual indication of where the patient’s score falls on the 000-999 scale.
+The “below average,” “average”, and “above average” text indicator for ORS within the tile is based on the distribution of scores obtained from a large PDMP patient population in 2020/2021 (i.e., the reference PDMP population). The below and above average thresholds currently represent the scores at the 25th and 75th percentiles from the reference PDMP population. For example, if a patient’s score is less than the score at the 25th percentile from the reference PDMP population, it is categorized as below average. If a patient’s score is greater than the score at the 75th percentile from the reference PDMP population, it is categorized as above average.
+Additional Information on the Overdose Risk Score Model 
+ORS is intended to provide a multi-variable estimate of unintentional overdose death risk based on PDMP data. The ORS algorithm does not incorporate any data other than what is available in the PDMP. This aligns the clinical application of the score with other sources of overdose risk assessment based on PDMP data such as number of pharmacies visited in the last 90 days or daily morphine equivalent dose (MED).  
+CAUTION / IMPORTANT REMINDER: Medical professionals use ORS as an indicator to further review details in the patient’s prescription history while attending to their patients. ORS is intended to aid, not replace, medical decision-making. Other patient-centric factors, such as mental health conditions24 (e.g., depression, anxiety, bipolar disorder, dementia), substance use conditions25, respiratory conditions26, hepatic and renal conditions27, and history of overdose,28 may influence unintentional overdose death but are not incorporated in the PDMP data used to calculate the ORS. None of the information presented should be used as sole justification for providing or refusing to provide medications.
+
+
+Document Information
+Disclaimer
+Bamboo Health has made every effort to ensure the accuracy of the information in this document at the time of printing. However, information is subject to change. 
+Change Log
+VersionDateChapter/SectionChange Made1.09/14/2023N/AN/A; initial publication1.112/19/2023NarxScores Calculations and MetricsUpdated timeframe for metric tallying and the initial description of the metrics that are used for Narx Scores calculationsGeneralUpdated overview to reflect the newest ORS model 
+
+1 When used in this document, unless the context requires otherwise, “PDMP” refers to the applicable state, territory, locality, or other government PDMP for the authorized user. 
+2 When used in this document, the term “clinician” refers to any prescriber or dispenser authorized user. 
+3 When used in this document, the term “controlled substance” refers to any federal or state controlled substance, as well as any other PDMP-reportable drugs.
+4 Hall AJ, Logan JE, Toblin RL, et al. Patterns of Abuse Among Unintentional Pharmaceutical Overdose Fatalities. JAMA. 2008;300(22): 2613–2620. doi:10.1001/jama.2008.802. 
+Yang Z, Wilsey B, Bohm M, et al. Defining Risk of Prescription Opioid Overdose: Pharmacy Shopping and Overlapping Prescriptions Among Long-Term Opioid Users in Medicaid. The Journal of Pain. 16(5): 445–453. 
+Paulozzi L, Kilbourne E, Shah N, et. al. A History of Being Prescribed Controlled Substances and Risk of Drug Overdose Death. Pain Medicine. 2012;13(1): 87–95. doi: 10.1111/j.1526-4637.2011.01260.x.
+https://www.ncbi.nlm.nih.gov/books/NBK458661/) 
+5 This distribution is based on data obtained from a single state between 2017 – 2023 and may vary slightly depending on a patient’s state of residence.
+6 https://www.cdc.gov/mmwr/volumes/71/rr/rr7103a1.htm#Recommendation9 
+7 https://www.ncbi.nlm.nih.gov/books/NBK458661/ 
+8 https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6917208/#:~:text=Similarly%2C%20the%20greatest%20share%20of,%E2%89%A565%20years%20(34.6%25) 
+9 This section describes the current version of ORS. For information on the original model of ORS, please refer to an earlier version of the NarxCare Application Overview or the applicable Zendesk article. 
+10 Rounded to the nearest 100.
+11 Designation made by the FDA
+12  Williams AR, Samples H, Crystal S, Olfon M. Acute care, prescription opioid use, and overdose following discontinuation of long-term Buprenorphine treatment for opioid use disorder. Am J Psychiatry, 2019; 177(2): 117-24.
+13 National Academies of Sciences, Engineering, and Medicine; Health and Medicine Division; Board on Health Sciences Policy; Committee on Pain Management and Regulatory Strategies to Address Prescription Opioid Abuse; Phillips JK, Ford MA, Bonnie RJ, editors. Pain Management and the Opioid Epidemic: Balancing Societal and Individual Benefits and Risks of Prescription Opioid Use. Washington (DC): National Academies Press (US); 2017 Jul 13.4, Trends in Opioid Use, Harms, and Treatment. 
+14 Designation made by the FDA
+15 National Institute on Drug Abuse. Overdose Death Rates. National Institute on Drug Abuse. Published February 9, 2023. https://nida.nih.gov/research-topics/trends-statistics/overdose-death-rates 
+16 Chua K, Brummet CM, Ng S, Bohnert ASB. Associate Between Receipt of Overlapping Opioid and Benzodiazepine Prescriptions From Multiple Prescribers and Overdose Risk. JAMA Netw Open. 2021;4(8):e2120353. doi:10.1001/jamanetworkopen.2021.20353
+17 Products – Data Briefs – Number 457 – December 2022. www.cdc.gov Published December 21, 2022. https://www.cdc.gov/nchs/products/databriefs/db457.htm#:~:text=In%202020%20and%202021%2C%20rates%20were%20highest%20for%20adults 
+18 The weightings for age range follows an inverted u-shaped curve, where the lowest weighting is for the youngest and oldest age groups and highest weighting is for the middle age groups.
+19 Cho J, Spence MM, Niu F, Hui RL, Gray P, Steinberg S. Risk of Overdose with Exposure to Prescription Opioids, Benzodiazepines, and Non-Benzodiazepine Sedative-Hypnotics in Adults: a Retrospective Cohort Study. J Gen Intern Med. 2020 Mar;35(3):696-703. doi: 10.1007/s11606-019-05545-y. Epub 2020 Jan 9. PMID: 31919729; PMCID: PMC7080944.
+20 Deyo, R.A., Hallvik, S.E., Hildebran, C. et al. Association Between Initial Opioid Prescribing Patterns and Subsequent Long-Term Use Among Opioid-Naïve Patients: A Statewide Retrospective Cohort Study. J GEN INTERN MED 32, 21-27 (2017). https://doi.org/10.1007/s11606-016-3810-3 
+21 Sun E C, Dixit A, Humphreys K, Darnall B D, Baker L C, Mackey S, et al. Association between concurrent use of prescription opioids and benzodiazepines and overdose: retrospective analysis BMJ 2017; 356:j760 doi:10.1136/bmj.j760
+22 Shah A, Hayes CJ, Martin BC. Characteristics of Initial Prescription Episodes and Likelihood of Long-Term Opioid Use – United States,  2006-2015. MMWR Morb Mortal Wkly Rep 2017;66:265-269. DOI: http://dx.doi.org/10.15585/mmwr.mm6610a1external_icon 
+23 Busse JW, Craigie S, Juurlink DN, Buckley DN, Wang L, Couban RJ, Agoritsas T, Akl EA, Carrasco-Labra A, Cooper L, Cull C, da Costa BR, Frank JW, Grant G, Iorio A, Persuad N, Stern S, Tugwell P, Vandvik PO, Guyatt GH. Guideline for opioid therapy and chronic noncancer pain. CMAJ. 2017 May 8;189(18):E659-E666. doi: 10.1503/cmaj.170363. PMID: 28483845; PMCID: PMC5422149. 
+24 van Draanen J, Tsang C, Mitra S, Phuong V, Murakami A, Karamouzian M, Richardson L. Mental disorder and opioid overdose: a systematic review. Soc Psychiatry Psychiatr Epidemiol. 2022 Apr;57(4):647-671. doi: 10.1007/s00127-021-02199-2. Epub 2021 Nov 18. PMID: 34796369; PMCID: PMC8601097
+
+25 https://ajp.psychiatryonline.org/doi/10.1176/appi.ajp.2011.10101476#:~:text=Analyses%20suggest%20that%20individuals%20who,with%20individuals%20without%20these%20conditions
+
+26 Le TT, Park S, Choi M, et alRespiratory events associated with concomitant opioid and sedative use among Medicare beneficiaries with chronic obstructive pulmonary diseaseBMJ Open Respiratory Research 2020;7:e000483. doi: 10.1136/bmjresp-2019-000483
+
+27 Bohnert ASB, Valenstein M, Bair MJ, et al. Association Between Opioid Prescribing Patterns and Opioid Overdose-Related Deaths. JAMA. 2011;305(13):1315–1321. doi:10.1001/jama.2011.370
+
+28 Caudarella A, Dong H, Milloy MJ, Kerr T, Wood E, Hayashi K. Non-fatal overdose as a risk factor for subsequent fatal overdose among people who inject drugs. Drug Alcohol Depend. 2016 May 1;162:51-5. doi: 10.1016/j.drugalcdep.2016.02.024. Epub 2016 Feb 26. PMID: 26993373; PMCID: PMC4833586
+---------------
+
+------------------------------------------------------------
+
+
+
+---------------
+
+------------------------------------------------------------
+
+
+
+
+
+9901 Linn Station Road, Suite 500 | Louisville, KY 40223 | bamboohealth.com
+
+NarxCare Application Overview	
+
+
+
+
+
+
