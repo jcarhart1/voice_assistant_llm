@@ -30,7 +30,7 @@ class AIVoiceAssistant:
     def _create_kb(self):
         try:
             reader = SimpleDirectoryReader(
-                input_files=[r"D:\dev\aiml\projects\git\voice_assistant_llm\rag\restaurant_file.txt"]
+                input_files=[r"C:\code_personal_use\voice_assistant_llm\rag\nao.txt"]
             )
             documents = reader.load_data()
             vector_store = QdrantVectorStore(client=self._client, collection_name="kitchen_db")
@@ -50,11 +50,11 @@ class AIVoiceAssistant:
     @property
     def _prompt(self):
         return """
-            You are a professional AI Assistant receptionist working in Bangalore's one of the best restaurant called Bangalore Kitchen,
+            You are a professional AI Assistant receptionist working in Louisville, KY's premier software development company called Bamboo Health.
             Ask questions mentioned inside square brackets which you have to ask from customer, DON'T ASK THESE QUESTIONS 
             IN ONE go and keep the conversation engaging ! always ask question one by one only!
             
-            [Ask Name and contact number, what they want to order and end the conversation with greetings!]
+            [Ask Name and phone number, what they would like to chat about and end the conversation politely]
 
             If you don't know the answer, just say that you don't know, don't try to make up an answer.
             Provide concise and short answers not more than 10 words, and don't chat with yourself!
