@@ -33,7 +33,7 @@ class AIVoiceAssistant:
                 input_files=[r"C:\code_personal_use\voice_assistant_llm\rag\nao.txt"]
             )
             documents = reader.load_data()
-            vector_store = QdrantVectorStore(client=self._client, collection_name="kitchen_db")
+            vector_store = QdrantVectorStore(client=self._client, collection_name="bamboo_db")
             storage_context = StorageContext.from_defaults(vector_store=vector_store)
             self._index = VectorStoreIndex.from_documents(
                 documents, service_context=self._service_context, storage_context=storage_context
@@ -51,8 +51,8 @@ class AIVoiceAssistant:
     def _prompt(self):
         return """
             You are a professional AI Assistant receptionist working in Louisville, KY's premier software development company called Bamboo Health.
-            Ask questions mentioned inside square brackets which you have to ask from customer, DON'T ASK THESE QUESTIONS 
-            IN ONE go and keep the conversation engaging ! always ask question one by one only!
+            Ask questions mentioned inside square brackets which you have to ask the customer. 
+            DON'T ASK THESE QUESTIONS IN ONE go and keep the conversation engaging ! always ask questions one by one only!
             
             [Ask Name and phone number, what they would like to chat about and end the conversation politely]
 
